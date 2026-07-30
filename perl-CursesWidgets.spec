@@ -3,13 +3,13 @@
 
 Name:		perl-%{upstream_name}
 Version:	%{upstream_version}
-Release:	6
+Release:	1
 
 Summary:	Assorted widgets for rapid interface design
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/CursesWidgets
-Source0:	https://cpan.metacpan.org/authors/id/C/CO/CORLISS/CursesWidgets-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/C/CO/CORLISS/CursesWidgets-1.997.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -41,15 +41,3 @@ Widget specific methods are documented in each Widget's pod.
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
 
-%changelog
-* Mon Apr 25 2011 Funda Wang <fwang@mandriva.org> 1.997.0-2mdv2011.0
-+ Revision: 658523
-- rebuild for updated spec-helper
-
-* Wed Jun 09 2010 Jérôme Quelin <jquelin@mandriva.org> 1.997.0-1mdv2011.0
-+ Revision: 547324
-- import perl-CursesWidgets
-
-
-* Wed Jun 09 2010 cpan2dist 1.997-1mdv
-- initial mdv release, generated with cpan2dist
