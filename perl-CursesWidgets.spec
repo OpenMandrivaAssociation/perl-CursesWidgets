@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	1.997
-Release:	4
+Release:	5
 
 Summary:	Assorted widgets for rapid interface design
 License:	GPL+ or Artistic
@@ -26,14 +26,14 @@ Widget specific methods are documented in each Widget's pod.
 %setup -q -n CursesWidgets-1.997
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
 # soft: do not fail package on test failures
 set +e
 # tests require human input
-#make test
+#make test || :
 
 %install
 %makeinstall_std
