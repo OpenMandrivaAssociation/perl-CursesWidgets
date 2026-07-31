@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	1.997
-Release:	5
+Release:	1
 
 Summary:	Assorted widgets for rapid interface design
 License:	GPL+ or Artistic
